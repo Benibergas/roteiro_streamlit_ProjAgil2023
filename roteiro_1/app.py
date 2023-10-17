@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Roteiro 1: Primeiros Passos com Streamlit")
+nome = st.text_input("Qual é seu nome?", '')
 
-if st.button("Clique-me"):
-    st.write("Você clicou no botão!")
+if st.button("Clique"):
+    st.write(f'{nome}')
